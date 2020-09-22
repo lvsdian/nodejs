@@ -104,3 +104,6 @@ build/
 dist/
 htmlcov
 test/__pycache__
+
+
+**/node_modules
