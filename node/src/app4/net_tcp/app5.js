@@ -9,7 +9,12 @@ const server = net.createServer((socket) => {
     server.getConnections((error, count) => {
         console.log('client count:' + count);
     });
+
+    socket.on('data', (data) => {
+        console.log(data.toString());
+    })
 });
+
 
 server.listen(8888, ()=> {
     console.log('server is listening');
