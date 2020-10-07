@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ioredis": "^4.17.3",
     "mysql": "^2.18.1",
     "socket.io": "^2.3.0",
     "uuid": "^8.3.0"
