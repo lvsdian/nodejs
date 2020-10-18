@@ -8,8 +8,16 @@ const myFunction = ()=> {
 // 或者是找到它后面执行的异步函数，在这个异步函数执行之前来调用它
 process.nextTick(myFunction);
 
-// 同步读取
+
+// 第一次同步读取
 console.log(fs.readFileSync('./app2.js').toString('utf8'));
+
+
+// 第二次同步读取
+console.log(fs.readFileSync('./app2.js').toString('utf8'));
+
+
+// 执行后，nextTick在这个地方调用
 
 // 异步读取
 fs.readFile('./app2.js', (error, data)=> {
