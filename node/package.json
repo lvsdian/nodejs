@@ -4,15 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "koaServer": "node src/app10/scripts/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/router": "^9.4.0",
+    "axios": "^0.20.0",
     "ioredis": "^4.17.3",
+    "jsonfile": "^6.0.1",
     "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-compress": "^5.0.1",
+    "koa-static": "^5.0.0",
     "mysql": "^2.18.1",
+    "qs": "^6.9.4",
     "socket.io": "^2.3.0",
     "uuid": "^8.3.0"
   }
